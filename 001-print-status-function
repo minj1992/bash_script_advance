@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#function to print the status
+print_status() {
+        echo "===========>>>> $1"
+}
+
+print_status "block-0 status..."
+print_status "block-1 status..."
+print_status "block-2 status..."
+print_status "block-3 status..."
+print_status "block-4 status..."
+print_status "block-5 status..."
+print_status "block-6 status..."
