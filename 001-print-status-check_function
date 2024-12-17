@@ -1,0 +1,80 @@
+#!/bin/bash
+
+# Function to print the status with success or failure
+print_status() {
+    echo "++++++++++++>>>> $1"
+}
+
+# Function to simulate success or failure for demonstration
+check_status() {
+    # For this example, we're just using a random success/failure simulation.
+    # In real cases, replace with actual condition checks (e.g., service status, command success, etc.)
+    if [ $((RANDOM % 2)) -eq 0 ]; then
+        return 0  # Success
+    else
+        return 1  # Failure
+    fi
+}
+
+# Block 0 - Check for some condition or service
+print_status "block-0 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-0 SUCCESS"
+else
+    print_status "block-0 FAILED"
+fi
+
+# Block 1 - Check for some condition or service
+print_status "block-1 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-1 SUCCESS"
+else
+    print_status "block-1 FAILED"
+fi
+
+# Block 2 - Check for some condition or service
+print_status "block-2 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-2 SUCCESS"
+else
+    print_status "block-2 FAILED"
+fi
+
+# Block 3 - Check for some condition or service
+print_status "block-3 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-3 SUCCESS"
+else
+    print_status "block-3 FAILED"
+fi
+
+# Block 4 - Check for some condition or service
+print_status "block-4 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-4 SUCCESS"
+else
+    print_status "block-4 FAILED"
+fi
+
+# Block 5 - Check for some condition or service
+print_status "block-5 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-5 SUCCESS"
+else
+    print_status "block-5 FAILED"
+fi
+
+# Block 6 - Check for some condition or service
+print_status "block-6 status..."
+check_status
+if [ $? -eq 0 ]; then
+    print_status "block-6 SUCCESS"
+else
+    print_status "block-6 FAILED"
+fi
